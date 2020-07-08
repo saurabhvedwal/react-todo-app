@@ -30,6 +30,7 @@ const todo = (props) => {
                     <DatePicker className="form-control" name="due_date"
                         value={props.todo.due_date} id={props.todoIndex}
                         onChange={(value, e) => props.dateChange(value, e, props.todoIndex)}
+                        minDate={new Date()}
                         disabled={disabled} />
 
                 </div>
